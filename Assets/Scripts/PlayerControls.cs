@@ -24,8 +24,6 @@ public class PlayerControls : MonoBehaviour
     float xThrow;
     float yThrow;
 
-    bool lasershot;
-
     void Update()
     {
         ProcessTranslation();
