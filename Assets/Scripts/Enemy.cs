@@ -18,11 +18,11 @@ public class Enemy : MonoBehaviour
 
     void OnParticleCollision(GameObject other)
     {
-        Processhit();
+        ProcessHit();
         KillEnemy();
     }
 
-    void Processhit()
+    void ProcessHit()
     {
         scoreboard.IncreaseScore(points);
     }
