@@ -20,6 +20,8 @@ public class PlayerControls : MonoBehaviour
     [Tooltip("Sets the ship X rotation based on player input")][SerializeField] float controlPitchFactor = -30f;
     [Tooltip("Sets the ship Z rotation based on player input")] [SerializeField] float controlRollFactor = -15f;
 
+    [Header("Weapons")]
+    [SerializeField] public float laserDamage = 1f;
 
     float xThrow;
     float yThrow;
@@ -30,9 +32,7 @@ public class PlayerControls : MonoBehaviour
         ProcessRotation();
         ProcessFiring();
     }
-
    
-
     void ProcessTranslation()
     {
         xThrow = Input.GetAxis("Horizontal");
@@ -49,7 +49,6 @@ public class PlayerControls : MonoBehaviour
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
-
 
     void ProcessRotation()
     {
