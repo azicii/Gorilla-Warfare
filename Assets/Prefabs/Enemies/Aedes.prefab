@@ -857,6 +857,7 @@ GameObject:
   - component: {fileID: 6069174034658792925}
   - component: {fileID: 8349391035969593623}
   - component: {fileID: 8328072673311313801}
+  - component: {fileID: -2094868158916375123}
   m_Layer: 0
   m_Name: Aedes
   m_TagString: Untagged
@@ -941,11 +942,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBeforeDeath: 1
-  deathVFX: {fileID: 3200836327345539238, guid: 6f67525afead97d4ab31f514c9155139, type: 3}
-  parent: {fileID: 0}
+  deathFX: {fileID: 3200836327345539238, guid: 6f67525afead97d4ab31f514c9155139, type: 3}
   laserVFX: {fileID: 3200836327345539238, guid: cc8ff308ea17035408a4903d4bf49128, type: 3}
   points: 100
   enemyHealth: 13
+--- !u!65 &-2094868158916375123
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556480081789698242}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.271937, y: 2.7247384, z: 12.217749}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7760407041043505508
 GameObject:
   m_ObjectHideFlags: 0

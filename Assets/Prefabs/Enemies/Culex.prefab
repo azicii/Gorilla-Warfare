@@ -1444,6 +1444,7 @@ GameObject:
   - component: {fileID: 7382675355463726614}
   - component: {fileID: 7372399751180836972}
   - component: {fileID: 7350711341430859920}
+  - component: {fileID: 386524429399725815}
   m_Layer: 0
   m_Name: Culex
   m_TagString: Untagged
@@ -1528,11 +1529,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBeforeDeath: 1
-  deathVFX: {fileID: 3200836327345539238, guid: 6f67525afead97d4ab31f514c9155139, type: 3}
-  parent: {fileID: 0}
+  deathFX: {fileID: 3200836327345539238, guid: 6f67525afead97d4ab31f514c9155139, type: 3}
   laserVFX: {fileID: 3200836327345539238, guid: cc8ff308ea17035408a4903d4bf49128, type: 3}
   points: 200
   enemyHealth: 20
+--- !u!65 &386524429399725815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7351158319107446714}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.589765, y: 1.8212523, z: 10.850527}
+  m_Center: {x: 0, y: -0.000008016825, z: 0}
 --- !u!1 &7970197061356653399
 GameObject:
   m_ObjectHideFlags: 0

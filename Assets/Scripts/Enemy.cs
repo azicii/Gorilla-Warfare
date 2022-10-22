@@ -6,7 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float timeBeforeDeath = 1f;
-    [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject deathFX;
     [SerializeField] GameObject laserVFX;
 
     Scoreboard scoreboard;
@@ -22,7 +22,6 @@ public class Enemy : MonoBehaviour
         playerControls = FindObjectOfType<PlayerControls>().GetComponent<PlayerControls>();
         AddRigidBody();
         parentGameObject = GameObject.FindWithTag("SpawnAtRuntime");
-
     }
 
     private void AddRigidBody()
@@ -41,7 +40,6 @@ public class Enemy : MonoBehaviour
     {
         scoreboard.IncreaseScore(playerControls.laserDamage);
         enemyHealth -= damageAmount;
-
 
         if (enemyHealth <= 0f)
         {
@@ -63,8 +61,8 @@ public class Enemy : MonoBehaviour
     void KillEnemy()
     {
         scoreboard.IncreaseScore(points);
-        GameObject death_VFX = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        death_VFX.transform.parent = parentGameObject.transform;
+        GameObject death_FX = Instantiate(deathFX, transform.position, Quaternion.identity);
+        death_FX.transform.parent = parentGameObject.transform;
         Destroy(this.gameObject, timeBeforeDeath);
     }
 }
