@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SpawnAtRuntime
   - Enemy
+  - Options
   layers:
   - Default
   - TransparentFX

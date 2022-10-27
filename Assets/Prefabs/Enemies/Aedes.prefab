@@ -941,7 +941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25760b6a747aed14392da09cd2ced609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBeforeDeath: 1
+  timeBeforeDeath: 0.3
   deathFX: {fileID: 3200836327345539238, guid: 6f67525afead97d4ab31f514c9155139, type: 3}
   laserVFX: {fileID: 3200836327345539238, guid: cc8ff308ea17035408a4903d4bf49128, type: 3}
   points: 100

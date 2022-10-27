@@ -203,6 +203,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5713012329913435248}
     m_Modifications:
+    - target: {fileID: 4518419384782046336, guid: 9c34ed71ce44f024cb8cfceae0fe232d, type: 3}
+      propertyPath: laserDamage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6338276691645454231, guid: 9c34ed71ce44f024cb8cfceae0fe232d, type: 3}
       propertyPath: m_Name
       value: Player Ship
